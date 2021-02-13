@@ -56,24 +56,26 @@ nav ul li a {
     background-size: contain;
     background-position: center;
     position: relative;
+
 }
 
 .picture .subtitle {
+    position: absolute;
+    text-align: right;
     float: right;
-    text-align:center;
-    margin: -50px;
-    padding: 10px;
+    margin-top: -100px;
+    padding: 20px;
     background-color: slategray;
 }
 
 #aboutme {
-    width: 100%;
-    height: 100%;
+display: flex;
+flex-direction: row;
+flex-wrap: wrap;
 }
 
 #aboutme .leftheader {
     clear: both; 
-    display: flex;
     font-size: 48px;
     float: left;
     border-right: solid black;
@@ -90,18 +92,17 @@ nav ul li a {
 
 
 #work {
-    width: 100%;
-    height: 100%;
+ display: flex;
+ flex-direction: row;
+ flex-wrap: wrap;
 }
 
 #work .title {
-    clear: both; 
-    display: flex; 
+    clear: both;  
     font-size: 48px;
     border-right: solid black;
     margin-left: 25px;
     padding-left: 15px;
-    border-right: solid black;
 }
 
 #work .parent {
@@ -109,21 +110,37 @@ nav ul li a {
     margin-left: 25px;
 }
 
-.parent {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 0px;
-    grid-row-gap: 0px;
+#contactme {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     }
     
-    .div1 { grid-area: 2 / 2 / 2 / 6; }
-    .div2 { grid-area: 3 / 2 / 4 / 5; }
-    .div3 { grid-area: 3 / 4 / 4 / 6; }
-    .div4 { grid-area: 4 / 2 / 5 / 4; }
-    .div5 { grid-area: 4 / 4 / 5 / 6; }
+    #contactme .contacttitle {
+        clear: both; 
+        font-size: 48px;
+        float: left;
+        border-right: solid black;
+        margin-left: 25px;
+        padding-left: 15px;
+        margin-bottom: 50px;
+    }
+
 
 .div1 .div2 .div3 .div4 .div5 {
     position: relative;
 }
 
+.parent {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    }
+    
+    .div1 { grid-area: 1 / 2 / 2 / 6; }
+    .div2 { grid-area: 2 / 2 / 3 / 4; }
+    .div3 { grid-area: 2 / 4 / 3 / 6; }
+    .div4 { grid-area: 3 / 2 / 4 / 4; }
+    .div5 { grid-area: 3 / 4 / 4 / 6; }
