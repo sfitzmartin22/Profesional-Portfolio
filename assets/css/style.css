@@ -92,9 +92,9 @@ flex-wrap: wrap;
 
 
 #work {
- display: flex;
- flex-direction: row;
- flex-wrap: wrap;
+ display: inline-flex;
+ flex-direction: wrap;
+ justify-content: flex-start;
 }
 
 #work .title {
@@ -105,9 +105,19 @@ flex-wrap: wrap;
     padding-left: 15px;
 }
 
-#work .parent {
-    float: left;
-    margin-left: 25px;
+#work .parent h2 {
+ font-size: 24px;
+ background-color: cadetblue;
+ color: black;
+ border: 2px solid black;
+ margin-top: 36%;
+ flex-wrap: wrap;
+ 
+}
+
+#work a h2 {
+    position: absolute;
+
 }
 
 #contactme {
