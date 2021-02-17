@@ -33,6 +33,7 @@
     margin: 0;
   }
   
+  /* sets first section of webpage */
   header {
     padding: 15px 6% 15px 0;
     display: flex;
@@ -44,6 +45,7 @@
     box-shadow: 0 5px 35px rgba(146, 204, 206, 0.4);
   }
   
+  /* sets h1 in first section of webpage */
   header h1 {
     color: var(--tertiary);
     background-color: var(--secondary);
@@ -53,12 +55,14 @@
     line-height: 1;
   }
   
+  /* sets flex properties of list items in first section of webpage */
   nav {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
   }
   
+  /* sets properties for list items in first section of webpage */
   nav a {
     text-decoration: none;
     padding: 5px 10px;
@@ -72,6 +76,7 @@
     font-size: 1.4rem;
   }
   
+  /* sets hover properties for list in 1st section */
   nav a:hover {
     background-size: 100% 100%;
     color: var(--primary);
@@ -86,6 +91,7 @@
     margin-bottom: 45px;
   }
   
+  /* sets background image and properties in second section*/
   .hero-banner {
     background: rgb(68, 88, 120);
     background-image: url("../images/stock6.jpg"), linear-gradient(180deg, var(--secondary) 0%, var(--primary) 100%);
@@ -104,7 +110,7 @@
   .hero-banner div {
     flex: 0 0 90%;
   }
-  
+  /* sets subtitle box in 2nd section */
   .hero-banner h2 {
     background-color: var(--secondary);
     color: var(--tertiary);
@@ -115,12 +121,13 @@
     display: inline;
   }
   
+  /* wraps wabout-me, work, contactme section and sets properties (3rd/4th/5th section) */
   .page-wrapper {
     max-width: 88%;
     margin-left: auto;
     margin-right: auto;
   }
-  
+  /* about me section (3rd section)*/
   .page-section {
     margin: 25px 0;
     padding: 10px 0;
@@ -177,7 +184,7 @@
       min-height: 400px;
       flex-basis: 100%;
   }
-  
+  /* all .flex-item: sets all items in work section (4th section */
   .flex-item:hover {
     background-color: rgba(0, 0, 0, 0.3);
   }
@@ -190,7 +197,7 @@
   .flex-item h3 {
     font-size: 1.6rem;
   }
-  
+  /* 5th section - contact info*/
   .contact address {
     display: flex;
     flex-wrap: wrap;
@@ -198,8 +205,8 @@
     align-items: center;
     height: 100%;
   }
-  
-  .contact address a {
+  /* 5th section - contact info*/
+    .contact address a {
     color: var(--tertiary);
     padding: 5px;
     text-decoration: none;
@@ -213,35 +220,37 @@
     margin: 0 0.2rem 0.1rem;
     display: inline-block;
   }
-  
+
+  /* 5th section - contact info*/
   .contact address a:hover {
     background-size: 100% 88%;
     color: var(--secondary);
   }
   
-  /* portfolio project images */
-  .run-buddy {
+  /* portfolio project images set in work section (4th section) */
+  .future2 {
     background-image: url("../images/stock1.jpg");
   }
   
-  .led-wall {
+  .horiseon {
     background-image: url("../images/stock2.jpg");
   }
   
-  .react-calc {
+  .aboutme {
     background-image: url("../images/stock3.jpg");
   }
   
-  .pastel-puzzles {
+  .future1 {
     background-image: url("../images/stock4.jpg");
   }
   
-  .surf-report {
+  .password {
     background-image: url("../images/stock5.jpg");
   }
   
   /* end portfolio project images */
   
+  /* formats web page based on size */
   @media screen and (max-width: 980px) {
     header {
       padding: 0 0 10px 0;
@@ -274,7 +283,8 @@
       font-size: 7vw;
     }
   }
-  
+
+  /* formats web page based on size */
   @media screen and (max-width: 768px) {
     .flex-item,
     .flex-item:first-child {
